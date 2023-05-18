@@ -7,10 +7,14 @@ const Footer = () => {
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">
           <p className="font-playfair font-semibold text-2xl text-yellow">
-            JANE ESPER
+            WHITNEY ARTKINS
           </p>
           <p className="font-playfair text-md text-yellow">
-            ©2022 ESPER. All Rights Reserved.
+            ©2022 | Created by 
+            <a href="https://opiyodon.netlifyapp.com">
+              ARTKINS
+            </a>
+            . All Rights Reserved.
           </p>
         </div>
       </div>

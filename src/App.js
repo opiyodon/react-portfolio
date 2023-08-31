@@ -1,14 +1,15 @@
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import useMediaQuery from "./hooks/useMediaQuery";
 import Navbar from "./scenes/Navbar";
 import DotGroup from "./scenes/DotGroup";
 import Landing from "./scenes/Landing";
+import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import Testimonials from "./scenes/Testimonials";
+import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
-import { useEffect, useState } from "react";
-import LineGradient from "./components/LineGradient";
-import useMediaQuery from "./hooks/useMediaQuery";
-import { motion } from "framer-motion";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -28,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="app bg-deep-">
       
       <Navbar
         isTopOfPage={isTopOfPage}
@@ -72,6 +73,24 @@ function App() {
         <Projects />
 
       </div>
+
+      <LineGradient />
+
+      <div className="w-5/6 mx-auto md:h-full">
+
+        <Testimonials />
+
+      </div>
+
+      <LineGradient />
+
+      <div className="w-5/6 mx-auto md:h-full">
+
+        <Contact />
+
+      </div>
+
+      <Footer />
 
     </div>
   );
